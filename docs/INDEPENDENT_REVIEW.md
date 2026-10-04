@@ -2,6 +2,8 @@
 
 Date: 2026-10-04 UTC. Version: 0.1.0.
 
+Historical technical review followed by a verified release-evidence addendum at the end of this document.
+
 ## Recommendation
 
 Proceed to separately authorized source publication and sandbox-enabled hosted CI after the final source/archive hash check. The scoped numerical and import/export review has no remaining blocking finding in the tested cases. **Do not describe browser behavior, visual layout, accessibility, offline operation, or printable output as verified until the real-browser checks and artifact inspection pass.** This review is not MusicXML schema validation, musical-correctness certification, or evidence of customer demand.
@@ -58,3 +60,11 @@ These sources support encoded-time interpretation. They do not establish that an
 5. Before broader reliability or market claims, test permission-cleared exports from multiple notation programs and measure unsupported-context frequency and false positives
 
 No shared browser, hosted CI, publication, external customer contact, or university-site access was used during this review. The model tests do not substitute for the unrun browser, corpus, accessibility, and visual checks.
+
+## Verified release-evidence addendum — 2026-10-04
+
+The review sections above preserve the pre-publication assessment. The subsequent corrected implementation was published at `3d93da05e35a5f42b7c3be336ca1c2f1b1dc2389` and passed [run 37172746598](https://github.com/Masanori-Spec/bar-proof/actions/runs/37172746598): all four Node 22/24 × UTC/Asia/Tokyo model jobs and all 12 sandbox-enabled Chromium browser scenarios. The downloaded artifact archive SHA-256 was verified as `c3b8d96e077168c1de8ffba8f6c0650c0a5292f4e63ad29c7f8371d41565bb4e`.
+
+The publisher inspected all six full-report PDF pages, the single-page selected-measure PDF, and actual desktop/mobile captures. Print margins and scope layout are corrected, and the unfocused skip-link overlay is absent. Actual downloaded JSON deep-equals the expected model and independently computed fingerprint; actual HTML is byte-identical to the report generator. Selected immutable artifacts and per-file hashes are preserved in [browser-evidence/evidence.json](browser-evidence/evidence.json).
+
+These results close the browser and visual gates for that tested commit and those fixtures. They do not establish other-browser behavior, physical-device or printer behavior, formal accessibility/WCAG or screen-reader conformance, or real-world corpus accuracy. A subsequent documentation/evidence head has a separate external exact-head audit; the embedded evidence remains pinned to the tested implementation commit.

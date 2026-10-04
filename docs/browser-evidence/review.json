@@ -1,0 +1,631 @@
+{
+  "schema": "barproof.review.v1",
+  "engineVersion": "0.1.0",
+  "unit": "quarter-note",
+  "limits": {
+    "inputBytes": 8388608,
+    "xmlBytes": 8388608,
+    "archiveEntries": 128,
+    "archiveTotalBytes": 25165824,
+    "inflationRatio": 200,
+    "xmlNodes": 180000,
+    "xmlDepth": 64,
+    "parts": 64,
+    "measures": 4000,
+    "events": 20000,
+    "eventsPerMeasure": 1000,
+    "numberDigits": 24,
+    "rationalDigits": 256,
+    "meterFractionDigits": 128,
+    "meterPairs": 32,
+    "meterTerms": 64,
+    "meterTextChars": 4096,
+    "measureChildren": 2000,
+    "findings": 12000,
+    "findingsPerMeasure": 256,
+    "xmlNameChars": 128,
+    "partIdChars": 128,
+    "partNameChars": 256,
+    "measureLabelChars": 128,
+    "voiceStaffChars": 64,
+    "fragmentChars": 1200
+  },
+  "externalDoctypeIgnored": false,
+  "parts": [
+    {
+      "id": "P1",
+      "name": "クラリネット / Clarinet",
+      "ordinal": 1,
+      "measures": [
+        {
+          "ordinal": 1,
+          "label": "0",
+          "implicit": true,
+          "nonControlling": false,
+          "expected": "4",
+          "cursor": "1",
+          "extent": "1",
+          "divisions": "12",
+          "events": [
+            {
+              "ordinal": 1,
+              "sourceChildOrdinal": 2,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "0",
+              "end": "1",
+              "duration": "1",
+              "encodedDuration": "12",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            }
+          ],
+          "findings": [
+            {
+              "code": "implicit-pickup",
+              "severity": "info",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "0",
+              "measureOrdinal": 1,
+              "eventOrdinal": 0,
+              "sourceChildOrdinal": 0,
+              "fragment": "<measure number=\"0\" implicit=\"yes\"><attributes><divisions>12</divisions><time><beats>4</beats><beat-type>4</beat-type></time></attributes><note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note></measure>",
+              "fragmentTruncated": false
+            }
+          ],
+          "status": "review"
+        },
+        {
+          "ordinal": 2,
+          "label": "A",
+          "implicit": false,
+          "nonControlling": false,
+          "expected": "4",
+          "cursor": "3",
+          "extent": "3",
+          "divisions": "12",
+          "events": [
+            {
+              "ordinal": 1,
+              "sourceChildOrdinal": 1,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "0",
+              "end": "1",
+              "duration": "1",
+              "encodedDuration": "12",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 2,
+              "sourceChildOrdinal": 2,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "1",
+              "end": "2",
+              "duration": "1",
+              "encodedDuration": "12",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 3,
+              "sourceChildOrdinal": 3,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "2",
+              "end": "3",
+              "duration": "1",
+              "encodedDuration": "12",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            }
+          ],
+          "findings": [
+            {
+              "code": "underfull",
+              "severity": "review",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "A",
+              "measureOrdinal": 2,
+              "eventOrdinal": 0,
+              "sourceChildOrdinal": 0,
+              "fragment": "<measure number=\"A\"><note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note><note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note><note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note></measure>",
+              "fragmentTruncated": false,
+              "actual": "3",
+              "expected": "4",
+              "difference": "-1"
+            }
+          ],
+          "status": "review"
+        },
+        {
+          "ordinal": 3,
+          "label": "A",
+          "implicit": false,
+          "nonControlling": false,
+          "expected": "4",
+          "cursor": "4",
+          "extent": "4",
+          "divisions": "12",
+          "events": [
+            {
+              "ordinal": 1,
+              "sourceChildOrdinal": 1,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "0",
+              "end": "1",
+              "duration": "1",
+              "encodedDuration": "12",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 2,
+              "sourceChildOrdinal": 2,
+              "kind": "chord",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "0",
+              "end": "2",
+              "duration": "2",
+              "encodedDuration": "24",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><chord/><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 3,
+              "sourceChildOrdinal": 3,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "1",
+              "end": "4",
+              "duration": "3",
+              "encodedDuration": "36",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>36</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            }
+          ],
+          "findings": [
+            {
+              "code": "chord-too-long",
+              "severity": "review",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "A",
+              "measureOrdinal": 3,
+              "eventOrdinal": 2,
+              "sourceChildOrdinal": 2,
+              "fragment": "<note><chord/><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false,
+              "actual": "2",
+              "limit": "1"
+            }
+          ],
+          "status": "review"
+        },
+        {
+          "ordinal": 4,
+          "label": "4",
+          "implicit": false,
+          "nonControlling": false,
+          "expected": "4",
+          "cursor": "47/12",
+          "extent": "47/12",
+          "divisions": "12",
+          "events": [
+            {
+              "ordinal": 1,
+              "sourceChildOrdinal": 1,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "0",
+              "end": "1",
+              "duration": "1",
+              "encodedDuration": "12",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 2,
+              "sourceChildOrdinal": 2,
+              "kind": "backup",
+              "voice": "?",
+              "encodedVoice": null,
+              "voiceSource": "unspecified",
+              "staff": "1",
+              "start": "1",
+              "end": "-1/12",
+              "duration": "13/12",
+              "encodedDuration": "13",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<backup><duration>13</duration></backup>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 3,
+              "sourceChildOrdinal": 3,
+              "kind": "note",
+              "voice": "2",
+              "encodedVoice": "2",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "-1/12",
+              "end": "47/12",
+              "duration": "4",
+              "encodedDuration": "48",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><voice>2</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            }
+          ],
+          "findings": [
+            {
+              "code": "before-zero",
+              "severity": "review",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "4",
+              "measureOrdinal": 4,
+              "eventOrdinal": 2,
+              "sourceChildOrdinal": 2,
+              "fragment": "<backup><duration>13</duration></backup>",
+              "fragmentTruncated": false,
+              "actual": "-1/12"
+            },
+            {
+              "code": "underfull",
+              "severity": "review",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "4",
+              "measureOrdinal": 4,
+              "eventOrdinal": 0,
+              "sourceChildOrdinal": 0,
+              "fragment": "<measure number=\"4\"><note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note><backup><duration>13</duration></backup><note><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><voice>2</voice><type>quarter</type></note></measure>",
+              "fragmentTruncated": false,
+              "actual": "47/12",
+              "expected": "4",
+              "difference": "-1/12"
+            }
+          ],
+          "status": "review"
+        },
+        {
+          "ordinal": 5,
+          "label": "5",
+          "implicit": false,
+          "nonControlling": false,
+          "expected": "4",
+          "cursor": null,
+          "extent": null,
+          "divisions": null,
+          "events": [
+            {
+              "ordinal": 1,
+              "sourceChildOrdinal": 1,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": null,
+              "end": null,
+              "duration": null,
+              "encodedDuration": "12",
+              "divisions": null,
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>12</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 2,
+              "sourceChildOrdinal": 3,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": null,
+              "end": null,
+              "duration": null,
+              "encodedDuration": "24",
+              "divisions": null,
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 3,
+              "sourceChildOrdinal": 4,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": null,
+              "end": null,
+              "duration": null,
+              "encodedDuration": "24",
+              "divisions": null,
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            },
+            {
+              "ordinal": 4,
+              "sourceChildOrdinal": 5,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": null,
+              "end": null,
+              "duration": null,
+              "encodedDuration": "24",
+              "divisions": null,
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            }
+          ],
+          "findings": [
+            {
+              "code": "unsupported-midmeasure-divisions",
+              "severity": "unsupported",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "5",
+              "measureOrdinal": 5,
+              "eventOrdinal": 0,
+              "sourceChildOrdinal": 2,
+              "fragment": "<attributes><divisions>24</divisions></attributes>",
+              "fragmentTruncated": false
+            }
+          ],
+          "status": "unsupported"
+        },
+        {
+          "ordinal": 6,
+          "label": "6",
+          "implicit": false,
+          "nonControlling": false,
+          "expected": null,
+          "cursor": "3",
+          "extent": "3",
+          "divisions": "12",
+          "events": [
+            {
+              "ordinal": 1,
+              "sourceChildOrdinal": 2,
+              "kind": "note",
+              "voice": "1",
+              "encodedVoice": "1",
+              "voiceSource": "encoded",
+              "staff": "1",
+              "start": "0",
+              "end": "3",
+              "duration": "3",
+              "encodedDuration": "36",
+              "divisions": "12",
+              "tuplet": false,
+              "fragment": "<note><pitch><step>C</step><octave>4</octave></pitch><duration>36</duration><voice>1</voice><type>quarter</type></note>",
+              "fragmentTruncated": false
+            }
+          ],
+          "findings": [
+            {
+              "code": "unsupported-staff-time",
+              "severity": "unsupported",
+              "partId": "P1",
+              "partOrdinal": 1,
+              "measureLabel": "6",
+              "measureOrdinal": 6,
+              "eventOrdinal": 0,
+              "sourceChildOrdinal": 1,
+              "fragment": "<attributes><divisions>12</divisions><time number=\"1\"><beats>3</beats><beat-type>4</beat-type></time></attributes>",
+              "fragmentTruncated": false
+            }
+          ],
+          "status": "unsupported"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "parts": 1,
+    "measures": 6,
+    "events": 15,
+    "findings": 7
+  },
+  "input": {
+    "name": "offline.musicxml",
+    "bytes": 2452,
+    "sha256": "24441527cd936d56fd31b4f4e8a114b710dac167584189f59a1e9e35f1843d25",
+    "scoreSha256": "24441527cd936d56fd31b4f4e8a114b710dac167584189f59a1e9e35f1843d25",
+    "archivePath": null,
+    "archiveEntries": 0
+  },
+  "scope": {
+    "ja": "score-partwise の duration ÷ divisions を検査します。声部の長さは合算せず、連符比率も再適用しません。 浄書・再生・OCR・自動修復・全 XSD 検証・音楽的な正しさの判定は行いません。途中の divisions / 拍子変更、段別拍子は未対応として表示します。",
+    "en": "Inspect duration ÷ divisions in score-partwise files. Voice lengths are never summed, and tuplet ratios are never applied twice. No engraving, playback, OCR, automatic repair, full XSD validation, or musical-correctness verdict. Mid-measure divisions / meter changes and staff-specific meters are marked unsupported."
+  },
+  "privacy": {
+    "ja": "外部画像・DTD・リンクは取得しません。保存や通信は自動で行いません。ページを閉じると読み込みデータは消えます。",
+    "en": "No external images, DTDs, or links are fetched. No automatic saving or data transmission. Closing the page discards imported data."
+  },
+  "findingDescriptions": {
+    "before-zero": {
+      "ja": "カーソルが小節の先頭より前に移動しました",
+      "en": "The cursor moved before the start of this measure"
+    },
+    "underfull": {
+      "ja": "符号化された最大到達位置が拍子の長さより短いです。意図した省略か確認してください",
+      "en": "Encoded extent is shorter than the meter. Review whether this is intentional"
+    },
+    "overfull": {
+      "ja": "符号化された最大到達位置が拍子の長さを超えています",
+      "en": "Encoded extent is longer than the meter. Review the handoff"
+    },
+    "chord-too-long": {
+      "ja": "和音構成音が先行する基準音より長いです",
+      "en": "A chord tone lasts longer than its leading note"
+    },
+    "orphan-chord": {
+      "ja": "対応する直前の基準音を確認できません",
+      "en": "No compatible preceding leading note was found for this chord tone"
+    },
+    "invalid-duration": {
+      "ja": "正の duration が一意に指定されていません。時間軸は確定できません",
+      "en": "A single positive duration is missing or invalid; the timeline is incomplete"
+    },
+    "invalid-divisions": {
+      "ja": "divisions が一意の正の数ではありません",
+      "en": "Divisions is not a single positive number"
+    },
+    "missing-divisions": {
+      "ja": "継承できる divisions がありません",
+      "en": "No divisions value is available to inherit"
+    },
+    "missing-time": {
+      "ja": "継承できる拍子がありません。長さの比較は行いません",
+      "en": "No meter is available to inherit; extent comparison is unavailable"
+    },
+    "unsupported-midmeasure-divisions": {
+      "ja": "途中の divisions 変更は未対応です。次の明示的な小節境界設定まで継承値を使いません",
+      "en": "Mid-measure divisions changes are unsupported; inheritance stays unavailable until an explicit boundary reset"
+    },
+    "unsupported-midmeasure-time": {
+      "ja": "途中の拍子変更は未対応です。次の明示的な小節境界設定まで拍子を比較しません",
+      "en": "Mid-measure meter changes are unsupported; meter comparison waits for an explicit boundary reset"
+    },
+    "unsupported-inherited-divisions": {
+      "ja": "以前の未対応・不正な divisions 設定が未解決です",
+      "en": "An earlier unsupported or invalid divisions context remains unresolved"
+    },
+    "unsupported-inherited-time": {
+      "ja": "以前の未対応の拍子設定が未解決です",
+      "en": "An earlier unsupported meter context remains unresolved"
+    },
+    "unsupported-staff-time": {
+      "ja": "段別の拍子は未対応です",
+      "en": "Staff-specific meter is unsupported"
+    },
+    "unsupported-time-limit": {
+      "ja": "拍子の項数または分数の複雑さが安全上の上限を超えたため、拍子比較を保留します",
+      "en": "Meter pair, term, or fraction complexity exceeds the safety limit; meter comparison is withheld"
+    },
+    "unsupported-time": {
+      "ja": "この拍子表現は未対応です（自由拍子・交換拍子・不正形式など）",
+      "en": "This meter form is unsupported, including unmeasured, interchangeable, or malformed meter"
+    },
+    "unsupported-element": {
+      "ja": "未対応の小節内要素があります。時間軸の完全性は確認できません",
+      "en": "An unknown measure element prevents a complete timeline claim"
+    },
+    "implicit-pickup": {
+      "ja": "暗黙的小節です。弱起や反復の部分小節の可能性があるため長さ比較を省略します",
+      "en": "Implicit measure: extent comparison is skipped for pickup or partial-repeat context"
+    },
+    "non-controlling": {
+      "ja": "非制御小節です。複拍子の可能性があるため長さ比較を省略します",
+      "en": "Non-controlling measure: extent comparison is skipped for multimetric context"
+    },
+    "grace-duration": {
+      "ja": "装飾音の duration は通常カーソルに適用しません。記述を確認してください",
+      "en": "A grace-note duration is not applied to the ordinary cursor; review the encoding"
+    },
+    "empty-measure": {
+      "ja": "時間イベントのない小節です",
+      "en": "This measure has no timing events"
+    },
+    "incomplete-timeline": {
+      "ja": "時間軸を一意に確定できないため集計を表示しません",
+      "en": "Timeline totals are withheld because positioning is incomplete"
+    },
+    "ambiguous-event": {
+      "ja": "時間に関する子要素が重複または矛盾しています",
+      "en": "Timing-related child elements are duplicated or conflicting"
+    }
+  },
+  "eventKinds": {
+    "note": {
+      "ja": "音符",
+      "en": "Note"
+    },
+    "rest": {
+      "ja": "休符",
+      "en": "Rest"
+    },
+    "cue": {
+      "ja": "キュー音符",
+      "en": "Cue"
+    },
+    "grace": {
+      "ja": "装飾音",
+      "en": "Grace"
+    },
+    "chord": {
+      "ja": "和音構成音",
+      "en": "Chord tone"
+    },
+    "grace-chord": {
+      "ja": "装飾和音",
+      "en": "Grace chord"
+    },
+    "backup": {
+      "ja": "カーソルを戻す",
+      "en": "Backup"
+    },
+    "forward": {
+      "ja": "カーソルを進める",
+      "en": "Forward"
+    }
+  }
+}

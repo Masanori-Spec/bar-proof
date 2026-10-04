@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "chromiumSandbox": true,
+  "checks": [
+    "Japanese initial, keyboard skip, demos and English navigation",
+    "duplicate measure labels are distinguished by ordinal and source evidence",
+    "unsupported state never appears as a green verdict and filter is reversible",
+    "reset cancellation, replacement and repeated same-file imports",
+    "real MXL deflate, rootfile selection and error retention",
+    "interrupted worker import, newer import wins and reset cannot resurrect old result",
+    "oversized replacement invalidates an interrupted generation and retains the last completed result",
+    "offline import and actual JSON / bilingual HTML downloads",
+    "hostile imported text, DTD and external assets execute nothing and fetch nothing",
+    "long Japanese labels and responsive screens stay within the viewport",
+    "screen print makes selected-measure scope explicit and preserves visible evidence",
+    "no persisted score after reload, no duplicate IDs or uncaught errors"
+  ],
+  "uncaughtErrors": []
+}

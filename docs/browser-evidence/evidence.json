@@ -1,0 +1,298 @@
+{
+  "schema": "barproof.browser-evidence.v1",
+  "engineVersion": "0.1.0",
+  "verifiedAt": "2026-10-04",
+  "repository": "https://github.com/Masanori-Spec/bar-proof",
+  "testedCommit": "3d93da05e35a5f42b7c3be336ca1c2f1b1dc2389",
+  "runId": 37172746598,
+  "runUrl": "https://github.com/Masanori-Spec/bar-proof/actions/runs/37172746598",
+  "runConclusion": "success",
+  "artifact": {
+    "name": "barproof-browser-evidence",
+    "archiveSha256": "c3b8d96e077168c1de8ffba8f6c0650c0a5292f4e63ad29c7f8371d41565bb4e",
+    "archiveVerification": "Publisher verified downloaded GitHub artifact SHA-256 before extraction"
+  },
+  "modelJobs": [
+    {
+      "node": 22,
+      "timezone": "UTC",
+      "status": "passed",
+      "nodeTests": 75,
+      "oracleCases": 22,
+      "oracleMeasures": 28
+    },
+    {
+      "node": 22,
+      "timezone": "Asia/Tokyo",
+      "status": "passed",
+      "nodeTests": 75,
+      "oracleCases": 22,
+      "oracleMeasures": 28
+    },
+    {
+      "node": 24,
+      "timezone": "UTC",
+      "status": "passed",
+      "nodeTests": 75,
+      "oracleCases": 22,
+      "oracleMeasures": 28
+    },
+    {
+      "node": 24,
+      "timezone": "Asia/Tokyo",
+      "status": "passed",
+      "nodeTests": 75,
+      "oracleCases": 22,
+      "oracleMeasures": 28
+    }
+  ],
+  "browser": {
+    "runner": "ubuntu-22.04",
+    "engine": "Chromium",
+    "playwrightVersion": "1.56.0",
+    "chromiumSandbox": true,
+    "status": "passed",
+    "scenarioCount": 12,
+    "checks": [
+      "Japanese initial, keyboard skip, demos and English navigation",
+      "duplicate measure labels are distinguished by ordinal and source evidence",
+      "unsupported state never appears as a green verdict and filter is reversible",
+      "reset cancellation, replacement and repeated same-file imports",
+      "real MXL deflate, rootfile selection and error retention",
+      "interrupted worker import, newer import wins and reset cannot resurrect old result",
+      "oversized replacement invalidates an interrupted generation and retains the last completed result",
+      "offline import and actual JSON / bilingual HTML downloads",
+      "hostile imported text, DTD and external assets execute nothing and fetch nothing",
+      "long Japanese labels and responsive screens stay within the viewport",
+      "screen print makes selected-measure scope explicit and preserves visible evidence",
+      "no persisted score after reload, no duplicate IDs or uncaught errors"
+    ],
+    "uncaughtErrors": [],
+    "viewportWidths": [
+      1440,
+      768,
+      390,
+      320
+    ]
+  },
+  "artifactVerification": {
+    "actualJsonDeepEqualsSourceModel": true,
+    "actualHtmlByteEqualsSourceReport": true,
+    "inputSha256IndependentlyVerified": "24441527cd936d56fd31b4f4e8a114b710dac167584189f59a1e9e35f1843d25",
+    "reviewPdfPages": 6,
+    "selectedMeasurePdfPages": 1,
+    "visualInspection": "Publisher inspected all six report PDF pages, selected-measure PDF, desktop and mobile screenshots; print margins, selected-measure scope and absent skip overlay confirmed"
+  },
+  "files": [
+    {
+      "path": "desktop-ja.png",
+      "bytes": 266461,
+      "sha256": "c7ca74f90e31a363d3121a5c8d57ed3bff450c1c6d7a3f30256d41e87a3dd9e1"
+    },
+    {
+      "path": "desktop-en-evidence.png",
+      "bytes": 265989,
+      "sha256": "ee6a517c7e5a454c7f1b61b84f8d867a58feb36d354e2bb66ce93674af5cfadf"
+    },
+    {
+      "path": "mobile-ja.png",
+      "bytes": 191003,
+      "sha256": "f05a5b833507985afcb6bd17d7ab9f27ad5552179f53f493f5799aca2cdc7583"
+    },
+    {
+      "path": "review.json",
+      "bytes": 23621,
+      "sha256": "7c7b6834996e5207895ac6c318147500144fdd7963d592c6f97ed6d6146f84e8"
+    },
+    {
+      "path": "review.html",
+      "bytes": 19795,
+      "sha256": "5cfa823607940aed84d64e7308543cd0b7418af9e148c4dce419d3a1baa6ed7a"
+    },
+    {
+      "path": "review.pdf",
+      "bytes": 284873,
+      "sha256": "36029d9c5528b55c4e8ee6c2222d385985c9f8749c237712f5ce305f56dc24d5"
+    },
+    {
+      "path": "selected-measure.pdf",
+      "bytes": 86691,
+      "sha256": "26389e52b57238465cee46da460ac97e2b6003cfb2ecb6d05e7096d20cf5efae"
+    },
+    {
+      "path": "results.json",
+      "bytes": 1049,
+      "sha256": "0b7f0d9ce8c787c0a76678641351490ebe86d2eed0f32ef50c84762d0e824323"
+    }
+  ],
+  "testedSourceHashes": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1509,
+      "sha256": "d53b2c1a866575ef2393a402c77a620abe2b97a365d13f8ece2f67a8edbcb7c0"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 2277,
+      "sha256": "90326f96bd6c4d8e5270e0bd3864ce0cbcd7fd04128ffd990ac2f3d41d34e01e"
+    },
+    {
+      "path": "package.json",
+      "bytes": 594,
+      "sha256": "485423c20a6ce273018276be7e354058247e5070bb70005091e0ecb3bc78fadb"
+    },
+    {
+      "path": "public/guide.html",
+      "bytes": 5783,
+      "sha256": "e76662ffc4b7379c638c6def36fb09caec87b259e97b3b77d22004d782707c75"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 927,
+      "sha256": "383979db9dc94e55f7e592ca529b8d3e0f689c22d3b11cf2ffe23a0c9134339c"
+    },
+    {
+      "path": "public/mark.svg",
+      "bytes": 202,
+      "sha256": "b9c93f6c1a43fef1e1f009c9e80337f8fe0c3a0687932c008201d23f4d47c713"
+    },
+    {
+      "path": "public/style.css",
+      "bytes": 16500,
+      "sha256": "5dda00b5d89409d67799c811e29e5ccccadf89a793c42fbe19affd161619aaae"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 324,
+      "sha256": "ae162e73875a5ddb6437591262f1470f89462a335d3438e08e8feb152cd0f130"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "bytes": 661,
+      "sha256": "563f7d55141aae34cbdd78317d678deaa808444468cdf0ab9d6a354e3a9bac3d"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 989,
+      "sha256": "df6a8530d073dccf543988086481df75f0182c5669feb82771cf36f913a85c03"
+    },
+    {
+      "path": "scripts/worker-bundle.mjs",
+      "bytes": 691,
+      "sha256": "55dd89a8d862507646b1b083485e3f6095b4f780d7ecdcd0f377ad5d47af7af9"
+    },
+    {
+      "path": "src/app.mjs",
+      "bytes": 13227,
+      "sha256": "641f01ce35c2a74f06d98d79c178bb7ca87ad7c746a4a0d05bbb8589f0536c29"
+    },
+    {
+      "path": "src/core.mjs",
+      "bytes": 8638,
+      "sha256": "5d69c707c4bc126a70afe627523d7cc3b3e36d182fbe952e1ddf92757a0db1c8"
+    },
+    {
+      "path": "src/examples.mjs",
+      "bytes": 1656,
+      "sha256": "620639e80378f80bc310a166ee4a23a730b007b208509c06203da3c75e390e13"
+    },
+    {
+      "path": "src/i18n.mjs",
+      "bytes": 12159,
+      "sha256": "874b11e2639c05a039dd17263f53d014604f64de3f450d8987804746982dd2dc"
+    },
+    {
+      "path": "src/import.mjs",
+      "bytes": 5523,
+      "sha256": "e061f7883b75021a75b28c206d98de049ed973445680f7e07d0f3b24a8c77e45"
+    },
+    {
+      "path": "src/limits.mjs",
+      "bytes": 765,
+      "sha256": "7690626bfc2bd2890a601db3e1c0de7f1686428b8134efdb0d382c52e263bd51"
+    },
+    {
+      "path": "src/rational.mjs",
+      "bytes": 1123,
+      "sha256": "4c5ddb89fd6fe5a5f83ed47f413e55c2844f1123b86ae08333f9827f9d1bbc69"
+    },
+    {
+      "path": "src/report.mjs",
+      "bytes": 5315,
+      "sha256": "86db6f81e519b55dd71a232f297dbf28e99ffbaaa0b57e075fce9edc1fe9debf"
+    },
+    {
+      "path": "src/worker-source.mjs",
+      "bytes": 20321,
+      "sha256": "e7bca6e38d160f2f4fb91eb99b499f723e69539a319a28fd33e2e9435d1fc5f2"
+    },
+    {
+      "path": "src/worker.mjs",
+      "bytes": 369,
+      "sha256": "0509c6b76e160283c11eaf42efa02f1184d28ef27dee62b1ba0344c0bd6d1cef"
+    },
+    {
+      "path": "src/xml.mjs",
+      "bytes": 4179,
+      "sha256": "bd7d530e538908e22fbab9e062c1d8b52336fa342f9cd3774b3708e526e7ce4b"
+    },
+    {
+      "path": "tests/browser/browser-test.mjs",
+      "bytes": 11598,
+      "sha256": "099b539fed3abb68bae464661d7b4e81bf4bf9eb46ba6ec894d138b15a9c008a"
+    },
+    {
+      "path": "tests/core.test.mjs",
+      "bytes": 8464,
+      "sha256": "5dd1a0105a8b375d501e24c716d5148525456e72e2480596df6e6d2283dafe85"
+    },
+    {
+      "path": "tests/fixtures/oracle.json",
+      "bytes": 53255,
+      "sha256": "3df567bd2d4c846c5e9f9bbd5d187f70bbd70541fd227495dff574249f3600a2"
+    },
+    {
+      "path": "tests/helpers.mjs",
+      "bytes": 2301,
+      "sha256": "cc0d77038f0dbd2469c54063d21ec21db122f0efd0a6a55a2a8c83de529103a8"
+    },
+    {
+      "path": "tests/import.test.mjs",
+      "bytes": 4053,
+      "sha256": "9b980a8e8a31e76112f4f0f1ee6e404da038a894d12752b1091aefc135b52668"
+    },
+    {
+      "path": "tests/oracle.py",
+      "bytes": 18677,
+      "sha256": "1d56bf4845000122e0d0bb3cb23f41f40e58c83dc074639d234fdda5549b0ef9"
+    },
+    {
+      "path": "tests/oracle.test.mjs",
+      "bytes": 949,
+      "sha256": "10e06faac0f4d980779869164ffdc56a3e08e4b35aac9ce5870966246a194728"
+    },
+    {
+      "path": "tests/report.test.mjs",
+      "bytes": 1731,
+      "sha256": "5d793036772d379b3a414f44e8654279082b88be25cacbe3481306c1f756deda"
+    },
+    {
+      "path": "tests/reviewer.test.mjs",
+      "bytes": 9078,
+      "sha256": "d9fc8acac67e9b867dd84db4635f84f916871f6fe80a290c7d150d74f9f9b4a7"
+    },
+    {
+      "path": "tests/worker.test.mjs",
+      "bytes": 985,
+      "sha256": "4508436b59c0ca09b47ff994dfe3538468753d042fd8f13e2f306ff811086d23"
+    }
+  ],
+  "limitations": [
+    "Evidence is pinned to testedCommit, not a later documentation/publication head",
+    "Chromium hosted Linux only; responsive viewports are not physical mobile-device tests",
+    "No formal accessibility or screen-reader audit",
+    "No other browser engine or real printer hardware verification",
+    "No real-world multi-editor export-corpus accuracy study",
+    "No musical-correctness or full XSD validation claim"
+  ]
+}

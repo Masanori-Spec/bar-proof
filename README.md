@@ -7,14 +7,20 @@ BarProof reads the encoded duration timeline behind an exported score. It provid
 
 ## 検証状況 / Verification status
 
-- Local syntax / security-primitive checks, independent Python Fraction oracle, Node tests and static build: passed
-- 22 independently authored oracle cases cover 28 measures
-- Browser scenarios and sandbox-enabled GitHub Actions: authored, **not run yet**
-- No screenshot, visual-layout, accessibility audit, PDF-render, or hosted-CI pass is claimed
-- Local browser execution is restricted in this environment; no sandbox bypass was attempted
-- [Independent technical review](docs/INDEPENDENT_REVIEW.md) is complete; no repository or website publication has occurred
+[Published source](https://github.com/Masanori-Spec/bar-proof) · [Verified CI run](https://github.com/Masanori-Spec/bar-proof/actions/runs/37172746598) · [Evidence manifest](docs/browser-evidence/evidence.json)
 
-Exact test counts, execution evidence and known limitations are in [docs/VERIFICATION.md](docs/VERIFICATION.md).
+- At tested commit `3d93da05e35a5f42b7c3be336ca1c2f1b1dc2389`, all five hosted CI jobs passed
+- Each Node 22/24 × UTC/Asia-Tokyo job passed 75 tests and the independent Python Fraction oracle: 22 cases / 28 measures
+- All 12 Chromium browser scenarios passed with the sandbox enabled and no uncaught page errors
+- Actual desktop/mobile screenshots and all six full-report PDF pages plus the one-page selected-measure PDF were visually inspected
+- Actual downloaded JSON matches the source model; downloaded HTML matches the report generator byte-for-byte; the input SHA-256 was independently checked
+- [Independent technical review](docs/INDEPENDENT_REVIEW.md) is complete
+
+This evidence is pinned to the tested commit above. Later documentation/evidence commits must be checked against their own exact-head CI; this record does not automatically certify them. Other browser engines, physical mobile devices, real printers, formal accessibility/screen-reader audits and a real-world multi-editor export corpus remain unverified.
+
+[Desktop evidence](docs/browser-evidence/desktop-en-evidence.png) · [Japanese mobile evidence](docs/browser-evidence/mobile-ja.png) · [Bilingual report PDF](docs/browser-evidence/review.pdf) · [Selected-measure PDF](docs/browser-evidence/selected-measure.pdf)
+
+Exact scope and limitations are in [docs/VERIFICATION.md](docs/VERIFICATION.md). No musical-correctness or full XSD-validation claim is made.
 
 ## 使い方 / Workflow
 
@@ -24,9 +30,9 @@ Exact test counts, execution evidence and known limitations are in [docs/VERIFIC
 4. Select timeline bars or expand the event ledger to inspect encoded duration, divisions, source child, and XML fragment
 5. Save JSON or the self-contained JA/EN HTML report. The report includes every measure; direct screen printing includes only the selected measure
 
-ファイルはブラウザ内の Worker で解析します。スコア、画像、DTD を外部に送信しません。自動保存もありません。ページを読み込んだ後は、通信を切った状態でもファイル読み込み・検査・エクスポートができる構成です。オフラインでのページ再読み込みは対応外です。ブラウザ実行確認は未実施です。
+ファイルはブラウザ内の Worker で解析します。スコア、画像、DTD を外部に送信しません。自動保存もありません。ページを読み込んだ後は、通信を切った状態でもファイル読み込み・検査・エクスポートができる構成です。オフラインでのページ再読み込みは対応外です。上記の固定コミットでは、Linux 上の Chromium でオフライン読み込み・保存を確認しています。実機や他ブラウザでの検証は未実施です。
 
-The app processes files in a bounded worker. A bundled, static worker is constructed from application code already loaded into the page, so later file imports do not require further module requests. Score text never becomes code. Once the app is loaded, offline import and export are designed to work; offline page reload is not supported. The real-browser check is still pending.
+The app processes files in a bounded worker. A bundled, static worker is constructed from application code already loaded into the page, so later file imports do not require further module requests. Score text never becomes code. Once the app is loaded, offline import and export are designed to work; offline page reload is not supported. Offline-after-load import and export passed the pinned Linux Chromium browser run; other engines and real devices remain unverified.
 
 ## Run
 
