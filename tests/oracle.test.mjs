@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {inspectScore} from '../src/core.mjs';
+const data=JSON.parse(readFileSync(new URL('./fixtures/oracle.json',import.meta.url),'utf8'));
+function compare(actual,expected,path='result'){for(const [k,v] of Object.entries(expected)){if(k==='requiredCodes'){for(const c of v)assert.ok(actual.findings.some(f=>f.code===c),`${path} missing ${c}`);}else if(k==='forbiddenCodes'){for(const c of v)assert.ok(!actual.findings.some(f=>f.code===c),`${path} unexpected ${c}`);}else if(Array.isArray(v)){assert.equal(actual[k].length,v.length,`${path}.${k} length`);v.forEach((e,i)=>compare(actual[k][i],e,`${path}.${k}[${i}]`));}else if(v&&typeof v==='object')compare(actual[k],v,`${path}.${k}`);else assert.equal(actual[k],v,`${path}.${k}`);}}
+for(const c of data.cases)test(`independent oracle: ${c.id}`,()=>compare(inspectScore(c.xml),c.expected));

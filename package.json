@@ -1,0 +1,7 @@
+{
+  "name": "bar-proof", "version": "0.1.0", "private": true, "type": "module",
+  "description": "Local-first exact-rational MusicXML rhythm handoff inspector",
+  "engines": {"node": ">=22"},
+  "scripts": {"test":"node --test tests/*.test.mjs", "test:oracle":"python3 tests/oracle.py --check", "build":"node scripts/build.mjs", "serve":"node scripts/serve.mjs", "check":"node scripts/check.mjs && npm run test:oracle && npm test && npm run build", "test:browser":"node tests/browser/browser-test.mjs", "package":"node scripts/package.mjs"},
+  "devDependencies": {"@playwright/test":"1.56.0"}
+}
